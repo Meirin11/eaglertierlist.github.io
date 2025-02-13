@@ -7,7 +7,7 @@
     <style>
         body {
             font-family: Arial, sans-serif;
-            background-color: #121212;
+            background-color: #0d0d0d;
             color: white;
             margin: 0;
             padding: 0;
@@ -16,90 +16,78 @@
         .container {
             width: 90%;
             margin: 20px auto;
-            background: #1e1e1e;
+            background: #1a1a1a;
             padding: 40px;
             border-radius: 20px;
             box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.3);
-            border: 5px solid #00ff00;
+            border: 5px solid #0d0d0d;
         }
         .navbar {
-            background: #00ff00;
+            background: #1a1a1a;
             padding: 20px;
-            color: black;
+            color: white;
             font-size: 30px;
             font-weight: bold;
             border-radius: 20px 20px 0 0;
-        }
-        .search-bar {
-            margin: 30px 0;
-        }
-        input[type="text"] {
-            width: 90%;
-            padding: 15px;
-            font-size: 18px;
-            border: 3px solid #00ff00;
-            border-radius: 15px;
-            background: #333;
-            color: white;
         }
         table {
             width: 100%;
             border-collapse: collapse;
             margin-top: 30px;
             font-size: 22px;
+            background: #1a1a1a;
+            border-radius: 15px;
+            overflow: hidden;
         }
         th, td {
             padding: 20px;
-            border: 3px solid #00ff00;
+            border: 3px solid #0d0d0d;
+            border-radius: 10px;
+            transition: transform 0.2s ease-in-out;
         }
         th {
-            background: #00ff00;
-            color: black;
+            background: #0d0d0d;
+            color: white;
         }
         tr:nth-child(even) {
-            background: #222;
+            background: #111;
         }
-        /* Tier Colors */
-        .tier-ht1 { background-color: #8B0000; color: white; } /* Dark Red */
-        .tier-lt1 { background-color: #FF6347; color: white; } /* Lighter Red */
-        .tier-ht2 { background-color: #90EE90; color: black; } /* Light Green */
-        .tier-lt2 { background-color: #008080; color: white; } /* Teal */
+        td:hover {
+            transform: scale(1.1);
+        }
     </style>
 </head>
 <body>
     <div class="container">
         <div class="navbar">MC Rankings</div>
-        <div class="search-bar">
-            <input type="text" placeholder="Search player...">
-        </div>
         <table>
             <tr>
                 <th>#</th>
                 <th>Player</th>
-                <th>Score</th>
+                <th>Points</th>
                 <th>Tier</th>
             </tr>
-            <tr class="tier-ht1">
+            <tr>
                 <td>1</td>
-                <td>Karmaa3429</td>
+                <td>Steve</td>
                 <td>1500</td>
                 <td>HT1</td>
             </tr>
-            <tr class="tier-lt1">
+            <tr>
                 <td>2</td>
-                <td>chubbsge</td>
+                <td>Alex</td>
                 <td>1450</td>
                 <td>LT1</td>
             </tr>
-            <tr class="tier-ht2">
+            <tr>
                 <td>3</td>
-                <td>Twohandsrevy</td>
+                <td>Notch</td>
                 <td>1400</td>
                 <td>HT2</td>
             </tr>
-            <tr class="tier-lt2">
+            <tr>
                 <td>4</td>
-                <td>2slemon</td>
+                <td>Herobrine</td>
                 <td>1350</td>
                 <td>LT2</td>
             </tr>
