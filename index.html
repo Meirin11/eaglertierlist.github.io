@@ -7,51 +7,63 @@
     <style>
         body {
             font-family: Arial, sans-serif;
-            background-color: #f8f9fa;
+            background-color: #121212;
+            color: white;
             margin: 0;
             padding: 0;
             text-align: center;
         }
         .container {
-            max-width: 900px;
+            width: 90%;
             margin: 20px auto;
-            background: white;
-            padding: 20px;
-            border-radius: 15px;
-            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+            background: #1e1e1e;
+            padding: 40px;
+            border-radius: 20px;
+            box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.3);
+            border: 5px solid #00ff00;
         }
         .navbar {
-            background: #007bff;
-            padding: 10px;
-            color: white;
-            font-size: 20px;
-            border-radius: 10px 10px 0 0;
+            background: #00ff00;
+            padding: 20px;
+            color: black;
+            font-size: 30px;
+            font-weight: bold;
+            border-radius: 20px 20px 0 0;
         }
         .search-bar {
-            margin: 15px 0;
+            margin: 30px 0;
         }
         input[type="text"] {
-            width: 80%;
-            padding: 10px;
-            border: 2px solid #007bff;
-            border-radius: 10px;
+            width: 90%;
+            padding: 15px;
+            font-size: 18px;
+            border: 3px solid #00ff00;
+            border-radius: 15px;
+            background: #333;
+            color: white;
         }
         table {
             width: 100%;
             border-collapse: collapse;
-            margin-top: 20px;
+            margin-top: 30px;
+            font-size: 22px;
         }
         th, td {
-            padding: 10px;
-            border: 1px solid #ddd;
+            padding: 20px;
+            border: 3px solid #00ff00;
         }
         th {
-            background: #007bff;
-            color: white;
+            background: #00ff00;
+            color: black;
         }
         tr:nth-child(even) {
-            background: #f2f2f2;
+            background: #222;
         }
+        /* Tier Colors */
+        .tier-ht1 { background-color: #8B0000; color: white; } /* Dark Red */
+        .tier-lt1 { background-color: #FF6347; color: white; } /* Lighter Red */
+        .tier-ht2 { background-color: #90EE90; color: black; } /* Light Green */
+        .tier-lt2 { background-color: #008080; color: white; } /* Teal */
     </style>
 </head>
 <body>
@@ -67,32 +79,31 @@
                 <th>Score</th>
                 <th>Tier</th>
             </tr>
-            <tr>
+            <tr class="tier-ht1">
                 <td>1</td>
-                <td>Steve</td>
+                <td>Karmaa3429</td>
                 <td>1500</td>
-                <td>Diamond</td>
+                <td>HT1</td>
             </tr>
-            <tr>
+            <tr class="tier-lt1">
                 <td>2</td>
-                <td>Alex</td>
+                <td>chubbsge</td>
                 <td>1450</td>
-                <td>Gold</td>
+                <td>LT1</td>
             </tr>
-            <tr>
+            <tr class="tier-ht2">
                 <td>3</td>
-                <td>Notch</td>
+                <td>Twohandsrevy</td>
                 <td>1400</td>
-                <td>Platinum</td>
+                <td>HT2</td>
             </tr>
-            <tr>
+            <tr class="tier-lt2">
                 <td>4</td>
-                <td>Herobrine</td>
+                <td>2slemon</td>
                 <td>1350</td>
-                <td>Emerald</td>
+                <td>LT2</td>
             </tr>
         </table>
     </div>
 </body>
 </html>
-
