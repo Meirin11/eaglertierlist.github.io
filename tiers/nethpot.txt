@@ -1,6 +1,6 @@
 [NETHPOT]
 HT1
-
+ElectricBrick
 LT1
 
 HT2
@@ -13,7 +13,6 @@ DarkNessCIA
 LT3
 Sussytech
 ClownPierce434
-ElectricBrick
 
 HT4
 StormKing_
