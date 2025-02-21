@@ -1,10 +1,10 @@
-const tierlists = ['OVERALL', 'CRYSTAL', 'NETHPOT', 'SWORD', 'MACE', 'SMP', 'AXE', 'UHC'];
+const tierlists = ['OVERALL TOP TEN', 'CRYSTAL', 'NETHPOT', 'SWORD', 'MACE', 'SMP', 'AXE', 'UHC'];
 const buttonsContainer = document.getElementById('buttons');
 const leaderboardContainer = document.getElementById('leaderboard');
 tierlists.forEach(tier => {
     const button = document.createElement('button');
     button.className = 'button';
-    if (tier.toLowerCase() === 'overall') {  
+    if (tier.toLowerCase() === 'overall top ten') {  
         button.className += ' active';
     }
     const img = document.createElement('img');
@@ -14,7 +14,7 @@ tierlists.forEach(tier => {
     img.style.height = '32px';
     button.appendChild(img);
     button.appendChild(document.createTextNode(tier));
-    if (tier === 'OVERALL') {
+    if (tier === 'OVERALL TOP TEN') {
         button.onclick = () => window.location.href = 'index.html';
     } else {
         button.onclick = () => window.location.href = `${tier.toLowerCase()}.html`;
@@ -100,7 +100,7 @@ function aggregatePlayerData(rankings) {
     return playerData;
 }
 function displayLeaderboard(playerData) {
-    leaderboardContainer.innerHTML = '<h2>OVERALL</h2>';
+    leaderboardContainer.innerHTML = '<h2>OVERALL TOP TEN</h2>';
     const players = Object.entries(playerData)
         .map(([name, data]) => ({ name, ...data }))
         .sort((a, b) => b.totalPoints - a.totalPoints)
@@ -176,7 +176,7 @@ tierlists.forEach(tier => {
     const button = document.createElement('button');
     button.className = 'button';
     button.innerText = tier;
-    if (tier === 'OVERALL') {
+    if (tier === 'OVERALL TOP TEN') {
         button.onclick = () => window.location.href = 'index.html';
     } else {
         button.onclick = () => window.location.href = `${tier.toLowerCase()}.html`;
