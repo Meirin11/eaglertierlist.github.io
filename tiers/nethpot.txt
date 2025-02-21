@@ -1,17 +1,14 @@
 [NETHPOT]
 HT1
 
-
 LT1
-Flame
 
 HT2
-HalfTheDev
 
 LT2
-
+Karmaa3429
 HT3
-
+DarkNessCIA
 
 LT3
 Sussytech
